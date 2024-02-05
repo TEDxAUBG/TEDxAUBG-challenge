@@ -1,0 +1,86 @@
+/* Makes changes to the whole page */
+body{
+    background-color: black;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header */
+.header{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    /* Use justify-content property to change the position of the logo. You should get some 
+       suggestions from the editor */
+}   
+
+
+/* Containing images in frames (divs) logic */
+
+.img-container{
+    object-fit: cover;
+}
+
+.tedxlogo-img{
+    width: 200px;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%; 
+}
+
+
+/* Gallery Logic */
+
+.gallery-container{
+    /* HINT: To make the galery appear in a grid, change this property */
+    display: grid;
+
+    margin: auto; 
+    grid-template-columns: 300px 300px 300px;
+    padding: 30px; 
+    gap: 30px; 
+    justify-content: center;
+}
+
+.gallery-img{
+    width: 300px; 
+    border: solid 2px white; 
+}
+
+.tall{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* TEDxAUBG is about section */
+
+.is-about-section{
+    width: 960px;
+    margin: auto; 
+}
+
+.generate-button{
+    border: solid 2px grey;
+    border-radius: 1em;
+    width: 10em; 
+    padding: 1em; 
+    background-color: black;
+    color: white; 
+    cursor: pointer; 
+}
+
+.generate-button:hover{
+    background-color: red; 
+}
+
+/* Footer Section */
+
+footer{
+    text-align: center;
+    margin-top: 2em; 
+}
